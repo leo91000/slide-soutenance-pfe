@@ -1,0 +1,12 @@
+{
+    "windicss.enableAttrUtilityCompletion": true,
+    "windicss.enableAttrVariantCompletion": true,
+    "windicss.enableBracketCompletion": true,
+    "windicss.enableCodeCompletion": true,
+    "windicss.enableColorDecorators": true,
+    "windicss.enableDynamicCompletion": true,
+    "windicss.enableHoverPreview": true,
+    "windicss.enableRemToPxPreview": true,
+    "windicss.enableUtilityCompletion": true,
+    "windicss.enableVariantCompletion": true,
+}
