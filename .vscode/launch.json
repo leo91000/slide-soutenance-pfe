@@ -16,6 +16,6 @@
             "cwd": "${workspaceFolder}",
             "runtimeArgs": ["dev"],
             "port": 3031
-        }
+        },
     ]
 }
