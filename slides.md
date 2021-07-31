@@ -15,7 +15,10 @@ info: |
   ## Page de couverture soutenance
 ---
 
-<img src="/orange.png" class="h-20 rounded shadow d-block mx-auto" />
+<div class="flex flex-row items-center justify-center">
+  <img src="/orange.png" class="h-20 rounded shadow d-block mr-5" />
+  <img src="/imt.png" class="h-20 bg-white rounded shadow d-block ml-5" />
+</div>
 
 # Conception et développement de l'outil DOE
 ### Soutenance de PFE par Léo Coletta
@@ -29,7 +32,31 @@ h1 {
 </style>
 
 ---
-layout: default
+layout: two-cols
 ---
 
+<Header />
+
 # Sommaire
+
+- Orange
+- Contexte
+  - Outil DOE version Excel
+  - Projet Towerco
+- Outil DOE Web
+  - Pourquoi une version Web ?
+  - Méthodologie du projet
+  - Présentation technique
+- Résultats et pistes d'amélioration
+- Synthèse du PFE
+
+<template v-slot:right>
+
+<div class="h-full flex flex-column items-center justify-center">
+  <img src="/antenne-orange-2.jpg" class="h-80 rounded shadow d-block mx-auto" />
+</div>
+
+</template>
+
+<Pagination />
+
