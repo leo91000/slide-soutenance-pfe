@@ -258,15 +258,34 @@ layout: two-cols
       <li>Découverte de bugs</li>
     </ul>
   </li>
+  <li>
+    Devops
+    <ul>
+      <li>Intégration continue</li>
+      <li>Déploiement continue</li>
+      <li>Versionning</li>
+      <li>Monitoring</li>
+    </ul>
+  </li>
 </ul>
 
 <template v-slot:right>
 
-<div class="h-full flex flex-column items-center justify-center">
+<div class="h-full flex flex-column items-center justify-center mt-10">
   <img src="/schema-devops.png" class="h-50 rounded shadow d-block mx-auto" />
 </div>
 
 </template>
+
+<Pagination />
+
+---
+layout: two-cols
+---
+<Header />
+
+<AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Présentation de l'outil</AbsoluteTitle>
 
 <Pagination />
 
