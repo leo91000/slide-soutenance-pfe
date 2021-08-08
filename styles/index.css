@@ -1,3 +1,15 @@
-ul > li > ul {
-    @apply text-sm;
+:not(li) > ul {
+    @apply !list-disc;
+}
+
+:not(li) > ul > li > ul, :not(li) > ol > li > ul {
+    @apply text-sm !list-circle;
+}
+
+:not(li) > ul > li > ul > li > ul {
+    @apply text-xs !list-disc;
+}
+
+:not(li) > ol {
+    @apply !list-upper-roman;
 }
