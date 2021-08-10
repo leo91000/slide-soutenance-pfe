@@ -469,7 +469,7 @@ layout: two-cols
 </ul>
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-parametres-de-l'outil.png" class="mt-45 h-30 mx-auto rounded shadow" />
+  <img src="/app/fonctionnalite-parametres-de-l-outil.png" class="mt-45 h-30 mx-auto rounded shadow" />
 </template>
 
 <Pagination />
