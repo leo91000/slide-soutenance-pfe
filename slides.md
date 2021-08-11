@@ -13,6 +13,8 @@ lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
   ## Page de couverture soutenance
+
+name: Page de garde
 ---
 
 <div class="flex flex-row items-center justify-center">
@@ -33,6 +35,7 @@ h1 {
 
 ---
 layout: two-cols
+name: Sommaire
 ---
 
 <Header />
@@ -50,7 +53,7 @@ layout: two-cols
     - Méthodologie du projet
     - Présentation de l'outil
     - Présentation technique
-4. Résultats et pistes d'amélioration
+4. Résultats et axes d'amélioration
 
 <template v-slot:right>
 
@@ -64,6 +67,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Présentation de Orange
 ---
 
 
@@ -90,6 +94,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Présentation de mon département
 ---
 
 <Header />
@@ -133,6 +138,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Version Excel
 ---
 
 <Header />
@@ -148,7 +154,7 @@ layout: two-cols
   <li>
     Outil initialement développé sur Excel
   </li>
-  <li>Automatiser la documentation des travaux réalisé sur site</li>
+  <li>Automatiser la documentation des travaux réalisés sur site</li>
   <li>Entre 5 et 50 documents maximum avec l'outil</li>
   <li>Suivi des DOES traités par boîte mail</li>
 </ul>
@@ -166,6 +172,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Towerco
 ---
 <Header />
 
@@ -175,10 +182,10 @@ layout: two-cols
 <div class="mt-25" />
 
 <ul>
-  <li>Session du parc d'antenne Orange à une filliale</li>
+  <li>Session du parc d'antennes Orange à une filliale</li>
   <li>Faire concurrence à SFR (Hivory) et Bouygues (Cellnex)</li>
   <li>Obligation légale de fournir une documentation</li>
-  <li>2 documentaliste par UPR</li>
+  <li>2 documentalistes par UPR</li>
   <li>2.5 To de données à trier, filtrer et transférer</li>
   <li>Réutilisation de l'outil Excel avec un serveur d'API</li>
   <li>Dépôt des documents sous S3</li>
@@ -196,6 +203,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Pourquoi version WEB ?
 ---
 <Header />
 
@@ -207,7 +215,7 @@ layout: two-cols
     Simplifier l'expérience utilisateur
     <ul>
       <li>Interface utilisateur intuitive</li>
-      <li>Limiter le nombre de clique pour contrôler les DOE</li>
+      <li>Limiter le nombre de clics pour contrôler les DOE</li>
       <li>Simplifier les processus</li>
       <li>Limiter le nombre d'outil nécessaire au contrôle d'un DOE</li>
     </ul>
@@ -221,7 +229,7 @@ layout: two-cols
       <li>Décomplexifier le suivi (boîte mail en VBA)</li>
       <li>Problématique de sécurité</li>
       <li>
-        Automatiser ce qui est impossibles/compliqués en VBA
+        Automatiser ce qui est impossible/compliqué en VBA
         <ul>
           <li>Connexion à BDE Site</li>
           <li>Push SFTP</li>
@@ -242,6 +250,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Création du DOE
 ---
 
 <Header />
@@ -269,6 +278,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Dépot / Contrôle
 ---
 
 <Header />
@@ -278,11 +288,11 @@ layout: two-cols
 
 <div class="mt-25" />
 
-- Fichier attendus générés automatiquement
-- Obligatoire / Conditionelle
+- Fichiers attendus générés automatiquement
+- Fourniture Obligatoire / Conditionnelle
 - Fichiers fournis assignés aux fichiers attendus correspondant
 - Fichier OK ou NOK ou Fourniture ultérieur
-- Outil de renommage automatique à une règle donné
+- Outil de renommage automatique à une règle donnée
 - Visionneuse de documents
 - Contrôle
     - Refuser
@@ -299,6 +309,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Suivi des DOE
 ---
 
 <Header />
@@ -326,6 +337,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | DOE attendus
 ---
 
 <Header />
@@ -337,7 +349,7 @@ layout: two-cols
 
 - Liste de DOE non fournis (import SI)
 - Filtres
-    - Amenageurs
+    - Aménageurs
     - Type d'opé
     - Chef de Projet
     - Date FN6
@@ -353,6 +365,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | EDLE/EDLS manquants
 ---
 
 <Header />
@@ -380,6 +393,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Dictionnaire
 ---
 
 <Header />
@@ -392,7 +406,7 @@ layout: two-cols
 - Informations sur un fichier attendu
 - Exemple à faire <mdi-check class="text-green-400 inline" />
 - Exemple à ne pas faire <mdi-close class="text-red-400 inline" />
-- Ecris par les documentaliste
+- Écris par les documentalistes
 - Liste complète des fichiers disponible en consultation libre
 
 <template v-slot:right>
@@ -403,6 +417,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Publication trame
 ---
 
 <Header />
@@ -414,7 +429,7 @@ layout: two-cols
 
 - Liste des règles permettant de générer les fichiers attendus en fonction de la nature de l'opération
 - Modification / Publication / Versionning de la trame
-- Changements pas apliqués indirectement
+- Changements pas appliqués indirectement
 
 <template v-slot:right>
   <img src="/app/fonctionnalite-trame.png" class="ml-5 mt-25 rounded shadow" />
@@ -424,6 +439,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Utilisateurs
 ---
 
 <Header />
@@ -433,7 +449,7 @@ layout: two-cols
 
 <div class="mt-40" />
 
-- Gestion des profiles utilisateurs
+- Gestion des prôfiles utilisateurs
 - Role (Droits d'accès)
 - UPR (Régions accessibles)
 - Profile Orange / Totem
@@ -446,6 +462,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: feat | Autres
 ---
 
 <Header />
@@ -476,6 +493,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Méthodogie
 ---
 <Header />
 
@@ -486,15 +504,15 @@ layout: two-cols
   <li>
     Méthode agile
     <ul>
-      <li>Réunion répide tous les matins pour faire par des problèmatiques</li>
-      <li>Déploiement régulier pour avoir des boucles de retour rapides</li>
+      <li>Réunion rapide tous les matins pour faire part des problèmatiques</li>
+      <li>Déploiement régulier pour avoir des boucles de retours rapides</li>
       <li>Gestion et priorisation des features / bugs (kanban)</li>
     </ul>
   </li>
   <li>
-    Réunion régulières avec les acteurs concernés
+    Réunions régulières avec les acteurs concernés
     <ul>
-      <li>Idées de nouvelle fonctionnalités</li>
+      <li>Idées de nouvelles fonctionnalités</li>
       <li>Découverte de bugs</li>
     </ul>
   </li>
@@ -502,7 +520,7 @@ layout: two-cols
     Devops
     <ul>
       <li>Intégration continue</li>
-      <li>Déploiement continue</li>
+      <li>Déploiement continu</li>
       <li>Versionning</li>
       <li>Monitoring</li>
     </ul>
@@ -521,6 +539,7 @@ layout: two-cols
 
 ---
 layout: two-cols
+name: Stack technique
 ---
 <Header />
 
@@ -589,6 +608,7 @@ layout: two-cols
 
 ---
 layout: default
+name: Diagramme de BDD
 ---
 <Header />
 
@@ -603,6 +623,7 @@ layout: default
 
 ---
 layout: two-cols
+name: Résultats / Améliorations
 ---
 <Header />
 
@@ -619,16 +640,16 @@ layout: two-cols
   <li>
     Pistes d'amélioration
     <ul>
-      <li>Test unitaires</li>
-      <li>Meilleur séparation du code (par domaine)</li>
-      <li>Meilleur anticipation des besoins</li>
+      <li>Tests unitaires</li>
+      <li>Meilleure séparation du code (par domaine)</li>
+      <li>Meilleure anticipation des besoins</li>
     </ul>
   </li>
   <li>
     Résultats
     <ul>
       <li>Application en production <mdi-check class="inline text-green-400 animate-pulse" /></li>
-      <li>Interface intuitives <mdi-check class="inline text-green-400 animate-pulse" /></li>
+      <li>Interfaces intuitives <mdi-check class="inline text-green-400 animate-pulse" /></li>
       <li>Application performante <mdi-check class="inline text-green-400 animate-pulse" /></li>
     </ul>
   </li>
@@ -646,6 +667,7 @@ layout: two-cols
 
 ---
 layout: default
+name: Merci de votre écoute
 ---
 <Header />
 
