@@ -1,20 +1,13 @@
 ---
-# try also 'default' to start simple
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
 background: /antennes-orange.jpg
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+class: text-center
 highlighter: shiki
-# show line numbers in code blocks
 lineNumbers: false
-# some information about the slides, markdown enabled
 info: |
   ## Page de couverture soutenance
-
 name: Page de garde
+title: Page de garde
 ---
 
 <div class="flex flex-row items-center justify-center">
@@ -32,6 +25,16 @@ h1 {
   @apply mt-10;
 }
 </style>
+
+<!--
+Bonjour,
+
+Dans le cadre de mon projet de fin d'étude à Orange, j'ai conçu et développé l'outil DOE ; un outil facilitant le dépôt et le contrôle documentaire.
+
+Ce projet d'envergure s'inscrit dans une période de transition chez Orange avec le projet Towerco, et il m'a fallu faire preuve de beaucoup d'agilité afin de mener à bien ce projet.
+
+Petit avertissement : Je ne vais pas rentrer dans tous les détails techniques des points abordés, n'hésitez pas à me poser des questions à la fin si vous voulez plus de détail.
+-->
 
 ---
 layout: two-cols
@@ -53,7 +56,7 @@ name: Sommaire
     - Méthodologie du projet
     - Présentation de l'outil
     - Présentation technique
-4. Résultats et axes d'amélioration
+4. Résultats et réflexions
 
 <template v-slot:right>
 
@@ -65,11 +68,20 @@ name: Sommaire
 
 <Pagination />
 
+<!--
+Avant de vous expliquer les tenants et les aboutissants du projet, je vais donner quelques rappels sur Orange.
+
+Afin de mieux comprendre le projet, je vais expliquer le contexte avec la première en version en Excel puis le projet Towerco.
+
+Ensuite, je vais expliquer plus en détails le projet que j'ai développer : l'outil DOE en version web. Je vais expliquer l'utilité de l'outil, la méthodologie du projet mais aussi les outils techniques utilisés
+
+Pour terminer, j'expliquerai tous les enseignements que j'ai tirer de ce PFE, ainsi qu'une réflexion sur mon expérience.
+-->
+
 ---
 layout: two-cols
 name: Présentation de Orange
 ---
-
 
 <Header />
 
@@ -91,6 +103,15 @@ name: Présentation de Orange
 </template>
 
 <Pagination />
+
+<!--
+Comme vous le savez, Orange est un opérateur de télécommunication dans les offres les plus connus sont les offres mobiles et les offres fibres. Néanmoins Orange exerce beaucoup d'autre activités. On peut citer par exemple :
+ - Orange Bank
+ - Orange Cyberdefense
+ - Orange Business Service
+
+Sur le marché des télécommunications, c'est un leader historique qui conserve son titre de 1er opérateur mobile selon l'Arcep depuis 10 ans.
+-->
 
 ---
 layout: two-cols
@@ -136,6 +157,14 @@ name: Présentation de mon département
 
 <Pagination />
 
+<!--
+J'ai effectué mon alternance à l'UPR l'unité de pilotage réseau dont l'objectif est de déployer et maintenir un réseau de qualité.
+
+Plus spécifiquement, j'étais dans l'entité DEP (Déploiement Réseau Mobile) qui, comme son nom l'indique s'occupe du déploiement du réseau mobile
+
+Plus spécifiquement, j'étais dans l'équipe PRB (Performance Relation bailleur) qui s'occupe de gérer les relations avec les bailleurs des sites antennaires d'Orange.
+-->
+
 ---
 layout: two-cols
 name: Version Excel
@@ -155,7 +184,6 @@ name: Version Excel
     Outil initialement développé sur Excel
   </li>
   <li>Automatiser la documentation des travaux réalisés sur site</li>
-  <li>Entre 5 et 50 documents maximum avec l'outil</li>
   <li>Suivi des DOES traités par boîte mail</li>
 </ul>
 
@@ -169,11 +197,23 @@ name: Version Excel
 
 <Pagination />
 
+<!--
+Je vais à présent vous expliquez le contexte de l'outil DOE.
+
+Pour chaque opération ou travaux réaliser sur un site mobile Orange, une documentation doit être fournis. Ces documents sont soit d'ordre légal, soit utiles à la maintenance des sites.
+
+Orange fait appel à des prestataires pour installer les sites mobiles. Il faut donc réclamer et contrôler la fourniture des documents.
+
+Initialement cette tâche était très complexe, et par soucis de simplicité plus de 300 documents étais fournis à chaque opération.
+
+Ayant pour objectif de réduire les nombre de documents à fournir et d'assurer un suivi des DOE, l'outil DOE version Excel  a vu le jour et a été utilisé pendant de nombreuses années.
+-->
 
 ---
 layout: two-cols
 name: Towerco
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
@@ -200,6 +240,16 @@ name: Towerco
 </template>
 
 <Pagination />
+
+<!--
+Comme j'ai expliqué en introduction, le projet de l'outil DOE s'est développé en parallèle d'un autre gros projet à Orange : le projet towerco.
+
+A l'instar de SFR et de Bouygues, Orange a choisi de séparer son activité déploiement de réseau pour séparer ses opex et ses capex. Cette opération
+
+Afin de mener à bien cette sission, la loi impose une session de la documentation. Néanmoins, pas toute la documentation ne dois être transférée. Afin d'opérer ce filtres et ce contrôle légal, 2 documentaliste ont été engagés par UPR.
+
+L'outil DOE version Excel convenant parfaitement à cette utilisation. Nous avons développer une API pour faciliter et accélerer ce processus de contrôle de l'entiereté de la documentation. Sans ca, il aurait fallu plusieurs années pour contrôler tous les documents
+-->
 
 ---
 layout: two-cols
@@ -623,11 +673,11 @@ name: Diagramme de BDD
 
 ---
 layout: two-cols
-name: Résultats / Améliorations
+name: Résultats / Reflexions
 ---
 <Header />
 
-<AbsoluteTitle :level="1">Résultats et pistes d'amélioration</AbsoluteTitle>
+<AbsoluteTitle :level="1">Résultats et réflexions</AbsoluteTitle>
 
 <ul class="mt-20">
   <li>
@@ -674,6 +724,3 @@ name: Merci de votre écoute
 <AbsoluteTitle :level="1" top-class="top-60">Merci de votre écoute</AbsoluteTitle>
 
 <Pagination />
-
-
-
