@@ -105,7 +105,7 @@ name: Présentation de Orange
 <Pagination />
 
 <!--
-Comme vous le savez, Orange est un opérateur de télécommunication dans les offres les plus connus sont les offres mobiles et les offres fibres. Néanmoins Orange exerce beaucoup d'autre activités. On peut citer par exemple :
+Comme vous le savez, Orange est un opérateur de télécommunication dans les offres les plus connus sont les offres mobiles et les offres fibres. Néanmoins Orange exerce beaucoup d'autres activités. On peut citer par exemple :
  - Orange Bank
  - Orange Cyberdefense
  - Orange Business Service
@@ -164,6 +164,14 @@ Plus spécifiquement, j'étais dans l'entité DEP (Déploiement Réseau Mobile) 
 
 Plus spécifiquement, j'étais dans l'équipe PRB (Performance Relation bailleur) qui s'occupe de gérer les relations avec les bailleurs des sites antennaires d'Orange.
 -->
+
+---
+layout: cover
+name: Fonctionnalités de l'application
+background: /background-contexte.jfif
+---
+
+# Contexte de l'application
 
 ---
 layout: two-cols
@@ -255,6 +263,7 @@ L'outil DOE version Excel convenant parfaitement à cette utilisation. Nous avon
 layout: two-cols
 name: Pourquoi version WEB ?
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
@@ -298,6 +307,33 @@ name: Pourquoi version WEB ?
 
 <Pagination />
 
+<!--
+Notre équipe a décidé de passer l'outil DOE pour plusieurs raisons :
+- Améliorer l'expérience utilisateurs avec des interfaces utilisateurs intuitives. Sans connaitre le processus entier de déploiement du réseau mobile, un utilisateur doit être capable d'utiliser l'outil.
+- Limiter le nombre de clics pour contrôler le DOE et permettre d'accélerer la fourniture
+- Limiter un maximum le nombre d'outil tierce à utiliser pour fonctionner   (aujourd'hui, un amenageur doit utiliser 3 et 5 outils différents en même temps pour fournir un DOE)
+
+Au dela de l'amélioration de l'expérience utilisateur, une version WEB permet de répondre à beaucoup de limitation du VBA :
+- En version WEB le déploiement de l'application est instantanné, sur l'outil Excel cela nécessite une communication aux 5 UPR qui elle même sont chargés de transmettre l'outil.
+- L'interconnexion au SI d'Orange peut être abstrait à l'utilisateur en version WEB, alors qu'en version excel il doit utiliser les différents outils du SI.
+- Réduire les temps de traitement
+- Simplifier la gestion du suivi qui se faisait en boite mail
+
+Enfin, un outil Excel ne peut pas répondre à la problématique de sécurisation des données RGPD. Une version WEB peut implémenter beaucoup plus facilement les techniques anonymisation ou de cryptage des données.
+-->
+
+---
+layout: cover
+name: Fonctionnalités de l'application
+background: /background-fonctionnalites.jfif
+---
+
+# Fonctionnalités de l'application
+
+<!--
+Je vais à présent vous expliquer le fonctionnement de l'application.
+-->
+
 ---
 layout: two-cols
 name: feat | Création du DOE
@@ -325,6 +361,14 @@ name: feat | Création du DOE
 </template>
 
 <Pagination />
+
+<!--
+La création du DOE est l'étape de renseignement de l'opération. L'utilisateur fait part des détails du DOE comme par exemple le type de l'opération ou les bandes de fréquences.
+
+Après cette étape, l'outil génère un certains nombre de cases à cocher afin d'avoir plus de détails sur l'opération.
+
+Une fois le formulaire complété, l'utilisateur peut créer son DOE
+-->
 
 ---
 layout: two-cols
@@ -357,6 +401,47 @@ name: feat | Dépot / Contrôle
 
 <Pagination />
 
+<!--
+Après cette étape, l'utilisateur se retrouve sur la phase de dépôt des documents. A l'aide du formulaire remplis précédemment, l'outil génère un certain nombre de documents attendus. L'utilisateur doit donc déposer ses documents avec un le même nommage pour que l'outil détecte qu'il a été fournis.
+
+Sur cette page, à également accès à :
+- une visionneuse de documents
+- un outil de renommage qui permet de renommer un documents automatiquement à la bonne règle de nommage.
+- le dictionnaire que j'expliquerai dans la slide suivante
+
+Après cette étape l'utilisateur soumet son DOE à validation, et le documentaliste ou le bureau de contrôle va étudier les pièces fournis pour contrôler leurs validité. Le DOE peut être refusé, validé, validé avec complément ou validé sans contrôle.
+-->
+
+---
+layout: two-cols
+name: feat | Dictionnaire
+---
+
+<Header />
+
+<AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Dictionnaire</AbsoluteTitle>
+
+<div class="mt-40" />
+
+- Informations sur un fichier attendu
+- Exemple à faire <mdi-check class="text-green-400 inline" />
+- Exemple à ne pas faire <mdi-close class="text-red-400 inline" />
+- Écris par les documentalistes
+- Liste complète des fichiers disponible en consultation libre
+
+<template v-slot:right>
+  <img src="/app/fonctionnalite-dictionnaire-ouvert.png" class="mt-38 rounded shadow" />
+</template>
+
+<Pagination />
+
+<!--
+Pour qu'un utilisateur comprenne la nature d'un document donnée, un dictionnaire est fourni qui permet de décrire l'attendu documentaire.
+
+Des exemple conforme et non conforme sont également fournis afin de montrer les cas de refus usuels.
+-->
+
 ---
 layout: two-cols
 name: feat | Suivi des DOE
@@ -384,6 +469,12 @@ name: feat | Suivi des DOE
 </template>
 
 <Pagination />
+
+<!--
+Tous les DOE sont répertoriés dans des suivis, qui permet de rapidement voir tous les DOE en attente de fourniture ou terminés.
+
+A l'aide de filtre, on peut accéder directement a un DOE qui nous interesse.
+-->
 
 ---
 layout: two-cols
@@ -413,6 +504,12 @@ name: feat | DOE attendus
 
 <Pagination />
 
+<!--
+Un autre suivi permet d'afficher tous les DOE à fournir pour une entité donné. Si un DOE est commencé à partir de cette page, une partie du formulaire de création du DOE est remplis automatiquement à partir des informations du SI Orange.
+
+Un administrateur peut également choisir d'ignorer un DOE
+-->
+
 ---
 layout: two-cols
 name: feat | EDLE/EDLS manquants
@@ -441,29 +538,15 @@ name: feat | EDLE/EDLS manquants
 
 <Pagination />
 
----
-layout: two-cols
-name: feat | Dictionnaire
----
+<!--
+Une fonctionnalité spécifique est la fourniture des EDLE/EDLS (Etat des lieux entrants / sortants).
 
-<Header />
+Lorsque qu'orange est en cohabitation avec un autre opérateur, comme par exemple free, un état des lieux doit être fournis. Ces fichiers sont généralement fournis 6 mois après la cloture d'un DOE.
 
-<AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
-<AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Dictionnaire</AbsoluteTitle>
+Afin d'éviter de surcharger le suivi des DOE qui sont en attente pendant 6 mois. La fourniture de ces fichiers ce font sur une autre page.
 
-<div class="mt-40" />
-
-- Informations sur un fichier attendu
-- Exemple à faire <mdi-check class="text-green-400 inline" />
-- Exemple à ne pas faire <mdi-close class="text-red-400 inline" />
-- Écris par les documentalistes
-- Liste complète des fichiers disponible en consultation libre
-
-<template v-slot:right>
-  <img src="/app/fonctionnalite-dictionnaire-ouvert.png" class="mt-38 rounded shadow" />
-</template>
-
-<Pagination />
+Une fois ce fichier fournis, il est automatiquement injecté dans le DOE.
+-->
 
 ---
 layout: two-cols
@@ -487,6 +570,14 @@ name: feat | Publication trame
 
 <Pagination />
 
+<!--
+La liste des fichiers attendus générer à la création d'un DOE n'est pas fixe. Elle est générer en fonction d'une trame modifiable.
+
+Un problème que j'ai rencontrer lors de la création de cette fonctionnalité en version WEB qui n'existait pas en version Excel, c'est que les DOE en cours se retrouvait désynchronisé de la trame. Pour répondre à cette problématique j'ai utiliser un système de versionning et de publication de trame.
+
+Une fois la trame publié tous les DOE en cours sont réanalysés afin d'avoir tous les fichiers manquants affichés. Les DOE validés restent sur une ancienne version de la trame.
+-->
+
 ---
 layout: two-cols
 name: feat | Utilisateurs
@@ -509,6 +600,12 @@ name: feat | Utilisateurs
 </template>
 
 <Pagination />
+
+<!--
+L'outil permet également de gérer les droit des utilisateurs par UPR et par role (RBAC).
+
+Le projet towerco a également imposé une différence entre profile Orange et Totem.
+-->
 
 ---
 layout: two-cols
@@ -541,10 +638,22 @@ name: feat | Autres
 
 <Pagination />
 
+<!--
+Il existe beaucoup d'autres fonctionnalités comme par exemple :
+- L'interconnexion avec Totem
+- Les dossiers Build to suit ATC
+- La mise à jour automatique des applications du SI d'orange
+- Les mail de relance automatique
+- Les tableau de bords permettant d'afficher des statistiques
+- Les exports CSV
+- Ou encore les paramètres de l'outil
+-->
+
 ---
 layout: two-cols
 name: Méthodogie
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
@@ -587,10 +696,22 @@ name: Méthodogie
 
 <Pagination />
 
+<!--
+Pour la réalisation de cette outil, nous avons fonctionné en méthode agile avec :
+- Des réunions tous les matins pour remonter les différentes problématiques
+- Des déploiement fréquents pour avoir des boucles de retours rapides
+- Une gestion des tâches et des priorisations en mode Kanban
+
+Nous avons également organiser beaucoup de réunion avec les utilisateurs futurs de l'application. Ces réunions ont permis de comprendre des fonctionnalités manquantes et de découvrir d'éventuels bug.
+
+Afin d'assurer un déploiement fréquent, nous avons utilisé l'intégration et le déploiement continue qui permet de déployer rapidement et automatiquement les nouvelles versions de l'application.
+-->
+
 ---
 layout: two-cols
 name: Stack technique
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
@@ -656,6 +777,17 @@ name: Stack technique
 
 <Pagination />
 
+<!--
+L'application est divisé en trois parties le backend (coté serveur), le frontend (coté client) et une troisième partis que j'ai appelé tâche asynchrone / CRON. Cette dernière partis permet de décharger les des tâches du temps de traitement des requêtes. Par exemple si un utilisateur demande la suppression d'un document, le client n'a pas besoin d'attendre que le fichier soit supprimé pour continuer à travailler.
+
+Je ne vais pas rentrer dans le détails de toutes les technologies utilisés. Ce qu'il faut retenir c'est que les choix techniques m'ont permis :
+- D'avoir une applications très performante
+- De pouvoir ajouter de nouvelles fonctionnalités très rapidement
+- D'assurer la maintenabilité de l'application
+- D'assurer une qualité de service (uptime)
+- De déployer de nouvelles fonctionnalité rapidement
+-->
+
 ---
 layout: default
 name: Diagramme de BDD
@@ -675,6 +807,7 @@ name: Diagramme de BDD
 layout: two-cols
 name: Résultats / Reflexions
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Résultats et réflexions</AbsoluteTitle>
@@ -684,15 +817,8 @@ name: Résultats / Reflexions
     Apprentissages
     <ul>
       <li>Complexité du SI d'Orange</li>
-      <li>Politique interne</li>
-    </ul>
-  </li>
-  <li>
-    Pistes d'amélioration
-    <ul>
-      <li>Tests unitaires</li>
-      <li>Meilleure séparation du code (par domaine)</li>
-      <li>Meilleure anticipation des besoins</li>
+      <li>Gestion de projet</li>
+      <li>Beaucoup de compétences techniques</li>
     </ul>
   </li>
   <li>
@@ -715,12 +841,27 @@ name: Résultats / Reflexions
 
 <Pagination />
 
+<!--
+Au cours de ces trois années d'apprentissage j'ai énormément appris que ce soit au niveau technique que humain.
+
+Ce PFE m'a permis de porter un projet de A à Z et d'être l'interlocuteur privilégié au niveau du national.
+
+J'ai appris à surmonter beaucoup d'obstacle technique ou humain.
+
+J'ai eu une expérience de la conduite de projet, j'ai passé beaucoup de temps réunions, des discussions qui sont relativement longues et fastidieuse et parfois sans résultats concrets.
+-->
+
 ---
 layout: default
 name: Merci de votre écoute
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1" top-class="top-60">Merci de votre écoute</AbsoluteTitle>
 
 <Pagination />
+
+<!--
+Je vous remercie de votre écoute.
+-->
