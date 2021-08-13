@@ -373,6 +373,8 @@ Une fois le formulaire complété, l'utilisateur peut créer son DOE
 ---
 layout: two-cols
 name: feat | Dépot / Contrôle
+preload: false
+clicks: 2
 ---
 
 <Header />
@@ -396,7 +398,9 @@ name: feat | Dépot / Contrôle
 
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
+  <img v-if="$slidev.nav.clicks === 0" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
+  <img v-if="$slidev.nav.clicks === 1" v-motion :initial="{ y: 0, x: 0, scale: 1 }" :enter="{ y: -35, x: -240, scale: 2.1 }" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
+  <img v-if="$slidev.nav.clicks === 2" v-motion :initial="{ y: -35, x: -240, scale: 2.1 }" :enter="{ y: 0, x: 0, scale: 1 }" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
 </template>
 
 <Pagination />
