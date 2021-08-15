@@ -63,13 +63,11 @@ name: Sommaire
     - Adaptation de l'outil DOE
 4. Résultats & Pistes de réflexion
 
-<template v-slot:right>
+::right::
 
 <div class="mt-8 h-full flex flex-column items-center justify-center">
   <img src="/antenne-orange-2.jpg" class="h-80 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
@@ -101,13 +99,11 @@ name: Présentation de Orange
 - Leader historique sur le marché
 - 1<sup>er</sup> opérateur mobile pour la 10<sup>ème</sup> année consécutive selon l'ARCEP
 
-<template v-slot:right>
+::right::
 
 <div class="h-full flex flex-column items-center justify-center">
   <img src="/orange.png" class="h-80 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
@@ -203,9 +199,9 @@ name: Processus de déploiement des sites mobiles
     - Négociation
     - Construction
 
-<template v-slot:right>
-  <img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
-</template>
+::right::
+
+<img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
 
 <Pagination />
 
@@ -225,9 +221,9 @@ name: Qu'est ce qu'un DOE ?
 - A l'issue des travaux réalisés sur sites, des documents sont nécessaires
 - Initialement 300+ documents fournis à chaque opération
 
-<template v-slot:right>
-  <img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
-</template>
+::right::
+
+<img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
 
 <Pagination />
 
@@ -264,13 +260,11 @@ name: Historique
 - Outil initialement développé sur Excel
 - Suivi des DOES traités par boîte mail
 
-<template v-slot:right>
+::right::
 
 <div class="h-full flex flex-column items-center justify-center">
   <img src="/doe-excel-profil-ame.png" class="h-60 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
@@ -320,11 +314,11 @@ name: Pourquoi version WEB ?
     - Push SFTP
 - Augmenter la sécurisation des données (RGPD)
 
-<template v-slot:right>
-  <div class="h-full flex flex-column items-center justify-center px-10">
-    <img src="/web.jpg" class="w-full rounded shadow d-block mx-auto" />
-  </div>
-</template>
+::right::
+
+<div class="h-full flex flex-column items-center justify-center px-10">
+  <img src="/web.jpg" class="w-full rounded shadow d-block mx-auto" />
+</div>
 
 <Pagination />
 
@@ -380,9 +374,9 @@ clicks: 2
     - Détails plus spécifiques
     - Généré en fonction du type d'opération
 
-<template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-nouveau-suivi-doe.png" :zoomed-x="-220" :zoomed-y="-20" :scale="1.7" class="mt-25 rounded shadow" />
-</template>
+::right::
+
+<ZoomableImage src="/app/fonctionnalite-nouveau-suivi-doe.png" :zoomed-x="-220" :zoomed-y="-20" :scale="1.7" class="mt-25 rounded shadow" />=
 
 <Pagination />
 
@@ -430,9 +424,9 @@ clicks: 2
 - Outil de renommage automatique à une règle donnée
 
 
-<template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-controle-des-documents.png" :zoomed-x="-240" :zoomed-y="-35" :scale="2.1" class="ml-5 mt-35 rounded shadow" />
-</template>
+::right::
+
+<ZoomableImage src="/app/fonctionnalite-controle-des-documents.png" :zoomed-x="-240" :zoomed-y="-35" :scale="2.1" class="ml-5 mt-35 rounded shadow" />
 
 <Pagination />
 
@@ -478,9 +472,9 @@ clicks: 2
 - Écris par les documentalistes
 - Liste complète des fichiers disponible en consultation libre
 
-<template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-dictionnaire-ouvert.png" :zoomed-x="-220" :zoomed-y="-25" :scale="2.2" class="mt-38 rounded shadow" />
-</template>
+::right::
+
+<ZoomableImage src="/app/fonctionnalite-dictionnaire-ouvert.png" :zoomed-x="-220" :zoomed-y="-25" :scale="2.2" class="mt-38 rounded shadow" />
 
 <Pagination />
 
@@ -519,9 +513,9 @@ clicks: 2
     - Date de dernière action
 - Bouton d'accès au DOE
 
-<template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-suivi-en-cours.png" :zoomed-x="-220" :zoomed-y="-5" :scale="2.2" class="mt-40 rounded shadow" />
-</template>
+::right::
+
+<ZoomableImage src="/app/fonctionnalite-suivi-en-cours.png" :zoomed-x="-220" :zoomed-y="-5" :scale="2.2" class="mt-40 rounded shadow" />
 
 <Pagination />
 
@@ -557,9 +551,9 @@ clicks: 2
 - Sites ignorés
 - Accès à la création du DOE prérempli
 
-<template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-doe-attendus.png" :zoomed-x="-230" :zoomed-y="-20" :scale="1.7" class="ml-5 mt-25 rounded shadow" />
-</template>
+::right::
+
+<ZoomableImage src="/app/fonctionnalite-doe-attendus.png" :zoomed-x="-230" :zoomed-y="-20" :scale="1.7" class="ml-5 mt-25 rounded shadow" />
 
 <Pagination />
 
@@ -595,9 +589,9 @@ name: feat | EDLE/EDLS manquants
     - Date dernière action
     - Mots clés
 
-<template v-slot:right>
-  <img src="/app/fonctionnalite-edle-edls-manquant.png" class="mt-40 rounded shadow" />
-</template>
+::right::
+
+<img src="/app/fonctionnalite-edle-edls-manquant.png" class="mt-40 rounded shadow" />
 
 <Pagination />
 
@@ -637,9 +631,9 @@ name: feat | Publication trame
 - Modification / Publication / Versionning de la trame
 - Changements pas appliqués indirectement
 
-<template v-slot:right>
-  <img src="/app/fonctionnalite-trame.png" class="ml-5 mt-25 rounded shadow" />
-</template>
+::right::
+
+<img src="/app/fonctionnalite-trame.png" class="ml-5 mt-25 rounded shadow" />
 
 <Pagination />
 
@@ -679,9 +673,9 @@ name: feat | Utilisateurs
 - UPR (Régions accessibles)
 - Profile Orange / Totem
 
-<template v-slot:right>
-  <img src="/app/fonctionnalite-user.png" class="ml-5 mt-30 rounded shadow" />
-</template>
+::right::
+
+<img src="/app/fonctionnalite-user.png" class="ml-5 mt-30 rounded shadow" />
 
 <Pagination />
 
@@ -721,9 +715,9 @@ name: feat | Autres
 - Exports CSV
 - Paramètres de l'outil
 
-<template v-slot:right>
-  <img src="/app/fonctionnalite-parametres-de-l-outil.png" class="mt-45 h-30 mx-auto rounded shadow" />
-</template>
+::right::
+
+<img src="/app/fonctionnalite-parametres-de-l-outil.png" class="mt-45 h-30 mx-auto rounded shadow" />
 
 <Pagination />
 
@@ -764,13 +758,11 @@ name: Méthodogie
   - Versionning
   - Monitoring
 
-<template v-slot:right>
+::right::
 
 <div class="h-full flex flex-column items-center justify-center mt-10">
   <img src="/schema-devops.png" class="h-50 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
@@ -811,7 +803,7 @@ name: Stack technique
 - Base de données : PostgreSQL
   - Migrations : Graphile Migrate
 
-<template v-slot:right>
+::right::
 
 <div class="mt-25 mb-5" />
 
@@ -830,8 +822,6 @@ name: Stack technique
   <img class="h-20 rounded shadow mx-2 p-1" src="/postgresql.png">
   <img class="h-20 rounded shadow mx-2 p-1" src="/gitlab.png">
 </div>
-
-</template>
 
 <Pagination />
 
@@ -861,12 +851,11 @@ name: Diagramme de BDD
 - Un outil très fiable se basant sur une base de donnée relationnelle
 - Capacité à traiter des milliers de transactions en simultané
 
+::right::
 
-<template v-slot:right>
-  <div class="h-full pt-20 pb-5 ml-5">
-    <img src="/app/diagramme-bdd-partial.png" class="h-full rounded shadow d-block mx-auto" />
-  </div>
-</template>
+<div class="h-full pt-20 pb-5 ml-5">
+  <img src="/app/diagramme-bdd-partial.png" class="h-full rounded shadow d-block mx-auto" />
+</div>
 
 <Pagination />
 
@@ -905,13 +894,11 @@ name: Towerco
 - Céder du patrimoine immobilier (sites et pylones) Orange à une filliale
 - S'adapter à la concurrence SFR (Hivory) et Bouygues (Cellnex)
 
-<template v-slot:right>
+::right::
 
 <div class="h-full flex flex-column items-center justify-center">
   <img src="/orange-enseigne.jpg" class="h-60 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
@@ -1031,13 +1018,11 @@ name: Résultats / Reflexions
   - Embauche d'une régie pour assurer la pérénisation du projet
   - Application mobile envisagée
 
-<template v-slot:right>
+::right::
 
 <div class="h-full flex flex-column items-center justify-center ">
   <img src="/improvements.jpg" class="h-50 rounded shadow d-block mx-auto" />
 </div>
-
-</template>
 
 <Pagination />
 
