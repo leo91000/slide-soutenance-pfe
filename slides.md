@@ -147,33 +147,20 @@ name: Présentation de mon département
 </div>
 
 
-<template v-slot:right>
+::right::
 
-<div class="mt-25">
-  <ul>
-    <li>
-      L'<span class="font-bold underline">Unité de Pilotage Réseau</span>
-      <ul>
-        <li>IRM (Ingénierie Réseau Mobile)</li>
-        <li>OPR (Opération Performance Réseau mobile)</li>
-        <li>APR (Anticipation Programmation Réseau Fixe)</li>
-        <li>
-          <span class="font-bold underline">DEP (Déploiement Réseau Mobile)</span>
-          <ul>
-            <li>Conception et Négoication Sites Mobiles</li>
-            <li>Pilotage Production Mobile Nord Est</li>
-            <li class="font-bold underline">Performances Relations Bailleurs</li>
-            <li>...</li>
-          </ul>
-        </li>
-        <li>...</li>
-      </ul>
-    </li>
-  </ul>
-</div>
+<div class="mt-25" />
 
-
-</template>
+- L'<u>**Unité de Pilotage Réseau**</u>
+  - IRM (Ingénierie Réseau Mobile)
+  - OPR (Opération Performance Réseau mobile)
+  - APR (Anticipation Programmation Réseau Fixe)
+  - <u>**DEP (Déploiement Réseau Mobile)**</u>
+    - Conception et Négoication Sites Mobiles
+    - Pilotage Production Mobile Nord Est
+    - class="font-bold underline">Performances Relations Bailleurs
+    - ...
+  - ...
 
 <Pagination />
 
@@ -315,35 +302,23 @@ name: Pourquoi version WEB ?
 <AbsoluteTitle :level="1">La solution DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Pourquoi une version WEB ?</AbsoluteTitle>
 
-<ul class="mt-20">
-  <li>
-    Simplifier l'expérience utilisateur
-    <ul>
-      <li>Interface utilisateur intuitive</li>
-      <li>Limiter le nombre de clics pour contrôler les DOE</li>
-      <li>Simplifier les processus</li>
-      <li>Limiter le nombre d'outil nécessaire au contrôle d'un DOE</li>
-    </ul>
-  </li>
-  <li>
-    Répondre aux limitations de VBA
-    <ul>
-      <li>Archivage de toutes les données (S3)</li>
-      <li>Interconnexion aux applications du SI Orange</li>
-      <li>Réduire les temps de traitement</li>
-      <li>Décomplexifier le suivi (boîte mail en VBA)</li>
-      <li>Problématique de sécurité</li>
-      <li>
-        Automatiser ce qui est impossible/compliqué en VBA
-        <ul>
-          <li>Connexion à BDE Site</li>
-          <li>Push SFTP</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Augmenter la sécurisation des données (RGPD)</li>
-</ul>
+<div class="mt-20" />
+
+- Simplifier l'expérience utilisateur
+  - Interface utilisateur intuitive
+  - Limiter le nombre de clics pour contrôler les DOE
+  - Simplifier les processus
+  - Limiter le nombre d'outil nécessaire au contrôle d'un DOE
+- Répondre aux limitations de VBA
+  - Archivage de toutes les données (S3)
+  - Interconnexion aux applications du SI Orange
+  - Réduire les temps de traitement
+  - Décomplexifier le suivi (boîte mail en VBA)
+  - Problématique de sécurité
+  - Automatiser ce qui est impossible/compliqué en VBA
+    - Connexion à BDE Site
+    - Push SFTP
+- Augmenter la sécurisation des données (RGPD)
 
 <template v-slot:right>
   <div class="h-full flex flex-column items-center justify-center px-10">
@@ -737,20 +712,14 @@ name: feat | Autres
 
 <hr class="my-5 mr-4">
 
-<ul>
-  <li>
-    Interconnexion Totem
-  </li>
-  <li>
-    Build to suit ATC
-  </li>
-  <li>Mise à jour automatique à partir des applications du SI d'Orange</li>
-  <li>Ouverture de l'outil aux prestataires (Accès internet)</li>
-  <li>Mail de relance automatique</li>
-  <li>Tableau de bord (statistiques)</li>
-  <li>Exports CSV</li>
-  <li>Paramètres de l'outil</li>
-</ul>
+- Interconnexion Totem
+- Build to suit ATC
+- Mise à jour automatique à partir des applications du SI d'Orange
+- Ouverture de l'outil aux prestataires (Accès internet)
+- Mail de relance automatique
+- Tableau de bord (statistiques)
+- Exports CSV
+- Paramètres de l'outil
 
 <template v-slot:right>
   <img src="/app/fonctionnalite-parametres-de-l-outil.png" class="mt-45 h-30 mx-auto rounded shadow" />
@@ -779,33 +748,21 @@ name: Méthodogie
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Méthodologie du projet</AbsoluteTitle>
 
-<ul class="mt-25">
-  <li>
-    Méthode agile
-    <ul>
-      <li>Réunion rapide tous les matins pour faire part des problèmatiques</li>
-      <li>Déploiement régulier pour avoir des boucles de retours rapides</li>
-      <li>Gestion et priorisation des features / bugs (kanban)</li>
-    </ul>
-  </li>
-  <li>
-    Un développement au plus près des utilisateurs
-    <ul>
-      <li>Réunions régulières avec les acteurs concernés</li>
-      <li>Idées de nouvelles fonctionnalités</li>
-      <li>Découverte de bugs</li>
-    </ul>
-  </li>
-  <li>
-    Devops
-    <ul>
-      <li>Intégration continue</li>
-      <li>Déploiement continu</li>
-      <li>Versionning</li>
-      <li>Monitoring</li>
-    </ul>
-  </li>
-</ul>
+<div class="mt-25" />
+
+- Méthode agile
+  - Réunion rapide tous les matins pour faire part des problèmatiques
+  - Déploiement régulier pour avoir des boucles de retours rapides
+  - Gestion et priorisation des features / bugs (kanban)
+- Un développement au plus près des utilisateurs
+  - Réunions régulières avec les acteurs concernés
+  - Idées de nouvelles fonctionnalités
+  - Découverte de bugs
+- Devops
+  - Intégration continue
+  - Déploiement continu
+  - Versionning
+  - Monitoring
 
 <template v-slot:right>
 
@@ -840,54 +797,32 @@ name: Stack technique
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Stack technique</AbsoluteTitle>
 
-<ul class="mt-25">
-  <li>
-    Back : NodeJS
-    <ul>
-      <li>Typescript</li>
-      <li>Framework : Express</li>
-      <li>GraphQL API : Postgraphile</li>
-    </ul>
-  </li>
-  <li>
-    Front : VueJS
-    <ul>
-      <li>Typescript</li>
-      <li>Framework : Nuxt</li>
-      <li>API de composition</li>
-      <li>Génération de code pour l'API</li>
-    </ul>
-  </li>
-  <li>
-    Base de données : PostgreSQL
-    <ul>
-      <li>Migrations : Graphile Migrate</li>
-    </ul>
-  </li>
-</ul>
+<div class="mt-25" />
+
+- Back : NodeJS
+  - Typescript
+  - Framework : Express
+  - GraphQL API : Postgraphile
+- Front : VueJS
+  - Typescript
+  - Framework : Nuxt
+  - API de composition
+  - Génération de code pour l'API
+- Base de données : PostgreSQL
+  - Migrations : Graphile Migrate
 
 <template v-slot:right>
 
-<ul class="mt-25 mb-5">
-  <li>
-    Tâche asynchrone / CRON / offload (worker)
-    <ul>
-      <li>Typescript</li>
-      <li>Graphile worker</li>
-    </ul>
-  </li>
-  <li>
-    Stockage des fichiers : S3 (OJS)
-  </li>
-  <li>
-    Déploiement
-    <ul>
-      <li>IAAS (Infrastucture as a Service)</li>
-      <li>Docker swarm</li>
-      <li>Gitlab CI/CD</li>
-    </ul>
-  </li>
-</ul>
+<div class="mt-25 mb-5" />
+
+- Tâche asynchrone / CRON / offload (worker)
+  - Typescript
+  - Graphile worker
+- Stockage des fichiers : S3 (OJS)
+- Déploiement
+  - IAAS (Infrastucture as a Service)
+  - Docker swarm
+  - Gitlab CI/CD
 
 <div class="flex flex-row">
   <img class="h-20 rounded shadow mx-2" src="/docker.jpg">
@@ -1079,34 +1014,22 @@ name: Résultats / Reflexions
 
 <AbsoluteTitle :level="1">Résultats & Pistes de réflexion</AbsoluteTitle>
 
-<ul class="mt-18">
-  <li>
-    Apprentissages
-    <ul>
-      <li>Complexité du SI d'Orange</li>
-      <li>Gestion de projet</li>
-      <li>Beaucoup de compétences techniques</li>
-      <li>Autonomie professionel</li>
-    </ul>
-  </li>
-  <li>
-    Résultats
-    <ul>
-      <li>Projet stratégique au niveau national <mdi-check class="inline text-green-400 animate-pulse" /></li>
-      <li>Application en production <mdi-check class="inline text-green-400 animate-pulse" /></li>
-      <li>Interfaces intuitives <mdi-check class="inline text-green-400 animate-pulse" /></li>
-      <li>Application performante <mdi-check class="inline text-green-400 animate-pulse" /></li>
-    </ul>
-  </li>
-  <li>
-    Perspectives
-    <ul>
-      <li>L'application continue d'être maintenue</li>
-      <li>Embauche d'une régie pour assurer la pérénisation du projet</li>
-      <li>Application mobile envisagée</li>
-    </ul>
-  </li>
-</ul>
+<div class="mt-18" />
+
+- Apprentissages
+  - Complexité du SI d'Orange
+  - Gestion de projet
+  - Beaucoup de compétences techniques
+  - Autonomie professionel
+- Résultats
+  - Projet stratégique au niveau national <mdi-check class="inline text-green-400 animate-pulse" />
+  - Application en production <mdi-check class="inline text-green-400 animate-pulse" />
+  - Interfaces intuitives <mdi-check class="inline text-green-400 animate-pulse" />
+  - Application performante <mdi-check class="inline text-green-400 animate-pulse" />
+- Perspectives
+  - L'application continue d'être maintenue
+  - Embauche d'une régie pour assurer la pérénisation du projet
+  - Application mobile envisagée
 
 <template v-slot:right>
 
