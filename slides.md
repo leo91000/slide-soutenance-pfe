@@ -45,22 +45,27 @@ name: Sommaire
 
 <AbsoluteTitle :level="1">Sommaire</AbsoluteTitle>
 
-<div class="mt-22"></div>
+<div class="mt-18"></div>
 
 1. Orange
-2. Contexte
-    - Outil DOE version Excel
-    - Projet Towerco
+2. Contexte de l'application
+    - Le processus de déploiement des sites
+    - Les DOE
+    - Historique
 3. Outil DOE Web
     - Pourquoi une version Web ?
-    - Méthodologie du projet
     - Présentation de l'outil
     - Présentation technique
+    - Méthodologie du projet
+3. Le projet towerco
+    - Description du projet
+    - Cession de la documentation
+    - Adaptation de l'outil DOE
 4. Résultats et réflexions
 
 <template v-slot:right>
 
-<div class="h-full flex flex-column items-center justify-center">
+<div class="mt-8 h-full flex flex-column items-center justify-center">
   <img src="/antenne-orange-2.jpg" class="h-80 rounded shadow d-block mx-auto" />
 </div>
 
@@ -111,6 +116,17 @@ Comme vous le savez, Orange est un opérateur de télécommunication dans les of
  - Orange Business Service
 
 Sur le marché des télécommunications, c'est un leader historique qui conserve son titre de 1er opérateur mobile selon l'Arcep depuis 10 ans.
+
+ARCEP = Autorité de régulation des communications électroniques, des postes et de la distribution de la presse
+
+Commentaires :
+Décrire ce que s'est l'ARCEP
+
+Commentaires :
+Non pas tous le monde connait Orange
+
+Vous connaissez !probablement (par X, par Y)
+Pourquoi Orange est si connu ?
 -->
 
 ---
@@ -163,11 +179,16 @@ J'ai effectué mon alternance à l'UPR l'unité de pilotage réseau dont l'objec
 Plus spécifiquement, j'étais dans l'entité DEP (Déploiement Réseau Mobile) qui, comme son nom l'indique s'occupe du déploiement du réseau mobile
 
 Plus spécifiquement, j'étais dans l'équipe PRB (Performance Relation bailleur) qui s'occupe de gérer les relations avec les bailleurs des sites antennaires d'Orange.
+
+Commentaires :
+L'entreprise Orange et pas Orange
+
+A des entités dans toute la France,
 -->
 
 ---
 layout: cover
-name: Fonctionnalités de l'application
+name: Contexte de l'application
 background: /background-contexte.jfif
 ---
 
@@ -175,7 +196,64 @@ background: /background-contexte.jfif
 
 ---
 layout: two-cols
-name: Version Excel
+name: Processus de déploiement des sites mobiles
+---
+
+<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Le processus de déploiement des site mobiles</AbsoluteTitle>
+
+<div class="mt-25" />
+
+- Processus de déploiement des site mobiles :
+    - Négociation
+    - Construction
+
+<template v-slot:right>
+  <img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
+</template>
+
+---
+layout: two-cols
+name: Qu'est ce qu'un DOE ?
+---
+
+<Header />
+
+<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Qu'est ce qu'un DOE ?</AbsoluteTitle>
+
+<div class="mt-25" />
+
+- DOE = <span class="font-bold">D</span>ossier d'<span class="font-bold">O</span>uvrage <span class="font-bold">E</span>xécuté
+- A l'issue des travaux réalisés sur sites, des documents sont nécessaires
+- Initialement 300+ documents fournis à chaque opération
+
+<template v-slot:right>
+  <img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
+</template>
+
+<Pagination />
+
+<!--
+Avant de rentrer plus dans le détails l'outil, il est nécessaire de comprendre ce qu'un un DOE.
+
+Le processus de déploiement comprends diverses étapes :
+- La négociation
+- La construction
+
+A l'issue des travaux réaliser sur un site mobile Orange, une documentation doit être fournis. Ces documents sont soit d'ordre légal, soit utiles à la maintenance des sites.
+
+Orange fait appel à des prestataires pour installer les sites mobiles. Il faut donc réclamer et contrôler la fourniture des documents.
+
+Initialement cette tâche était très complexe, et par soucis de simplicité plus de 300 documents étais fournis à chaque opération.
+
+Commentaire :
+- Se mettre plus en valeur
+-->
+
+---
+layout: two-cols
+name: Historique
 ---
 
 <Header />
@@ -183,17 +261,11 @@ name: Version Excel
 <AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Outil DOE Version Excel</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-40" />
 
-<ul>
-  <li>DOE = <span class="font-bold">D</span>ossier d'<span class="font-bold">O</span>uvrage <span class="font-bold">E</span>xécuté</li>
-  <li>Initialement 300+ documents fournis à chaque opération</li>
-  <li>
-    Outil initialement développé sur Excel
-  </li>
-  <li>Automatiser la documentation des travaux réalisés sur site</li>
-  <li>Suivi des DOES traités par boîte mail</li>
-</ul>
+- Automatiser la documentation des travaux réalisés sur site
+- Outil initialement développé sur Excel
+- Suivi des DOES traités par boîte mail
 
 <template v-slot:right>
 
@@ -208,55 +280,19 @@ name: Version Excel
 <!--
 Je vais à présent vous expliquez le contexte de l'outil DOE.
 
-Pour chaque opération ou travaux réaliser sur un site mobile Orange, une documentation doit être fournis. Ces documents sont soit d'ordre légal, soit utiles à la maintenance des sites.
-
-Orange fait appel à des prestataires pour installer les sites mobiles. Il faut donc réclamer et contrôler la fourniture des documents.
-
-Initialement cette tâche était très complexe, et par soucis de simplicité plus de 300 documents étais fournis à chaque opération.
-
 Ayant pour objectif de réduire les nombre de documents à fournir et d'assurer un suivi des DOE, l'outil DOE version Excel  a vu le jour et a été utilisé pendant de nombreuses années.
 -->
 
 ---
-layout: two-cols
-name: Towerco
+layout: cover
+name: Fonctionnalités de l'application
+background: /background-fonctionnalites.jfif
 ---
 
-<Header />
-
-<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
-<AbsoluteTitle :level="3" top-class="top-20">Projet Towerco</AbsoluteTitle>
-
-<div class="mt-25" />
-
-<ul>
-  <li>Session du parc d'antennes Orange à une filliale</li>
-  <li>Faire concurrence à SFR (Hivory) et Bouygues (Cellnex)</li>
-  <li>Obligation légale de fournir une documentation</li>
-  <li>2 documentalistes par UPR</li>
-  <li>2.5 To de données à trier, filtrer et transférer</li>
-  <li>Réutilisation de l'outil Excel avec un serveur d'API</li>
-  <li>Dépôt des documents sous S3</li>
-</ul>
-
-<template v-slot:right>
-
-<div class="h-full flex flex-column items-center justify-center">
-  <img src="/orange-enseigne.jpg" class="h-60 rounded shadow d-block mx-auto" />
-</div>
-
-</template>
-
-<Pagination />
+# Outil DOE Web
 
 <!--
-Comme j'ai expliqué en introduction, le projet de l'outil DOE s'est développé en parallèle d'un autre gros projet à Orange : le projet towerco.
-
-A l'instar de SFR et de Bouygues, Orange a choisi de séparer son activité déploiement de réseau pour séparer ses opex et ses capex. Cette opération
-
-Afin de mener à bien cette sission, la loi impose une session de la documentation. Néanmoins, pas toute la documentation ne dois être transférée. Afin d'opérer ce filtres et ce contrôle légal, 2 documentaliste ont été engagés par UPR.
-
-L'outil DOE version Excel convenant parfaitement à cette utilisation. Nous avons développer une API pour faciliter et accélerer ce processus de contrôle de l'entiereté de la documentation. Sans ca, il aurait fallu plusieurs années pour contrôler tous les documents
+Je vais à présent vous expliquer le fonctionnement de l'application.
 -->
 
 ---
@@ -320,23 +356,18 @@ Au dela de l'amélioration de l'expérience utilisateur, une version WEB permet 
 - Simplifier la gestion du suivi qui se faisait en boite mail
 
 Enfin, un outil Excel ne peut pas répondre à la problématique de sécurisation des données RGPD. Une version WEB peut implémenter beaucoup plus facilement les techniques anonymisation ou de cryptage des données.
--->
 
----
-layout: cover
-name: Fonctionnalités de l'application
-background: /background-fonctionnalites.jfif
----
+Commentaires :
 
-# Fonctionnalités de l'application
-
-<!--
-Je vais à présent vous expliquer le fonctionnement de l'application.
+Décrire RGPD,
+L'ancienne version ne respectait pas la RGPD
+Si l'entreprise
 -->
 
 ---
 layout: two-cols
 name: feat | Création du DOE
+clicks: 2
 ---
 
 <Header />
@@ -357,7 +388,7 @@ name: feat | Création du DOE
     - Généré en fonction du type d'opération
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-nouveau-suivi-doe.png" class="mt-25 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-nouveau-suivi-doe.png" :zoomed-x="-220" :zoomed-y="-20" :scale="1.7" class="mt-25 rounded shadow" />
 </template>
 
 <Pagination />
@@ -368,6 +399,13 @@ La création du DOE est l'étape de renseignement de l'opération. L'utilisateur
 Après cette étape, l'outil génère un certains nombre de cases à cocher afin d'avoir plus de détails sur l'opération.
 
 Une fois le formulaire complété, l'utilisateur peut créer son DOE
+
+Commentaire:
+- Sur chaque slide donner les avantages, ce qu'on a valu changer, ce qui ne fonctionnait pas, ce qu'on a voulu améliorer
+
+Commentaire :
+Expliquer mieux les cases à cocher
+- Dans la soltiion, un certain nombre d'informations optionnels sont générés en cliquant sur générer cases à cocher
 -->
 
 ---
@@ -384,6 +422,7 @@ clicks: 2
 
 <div class="mt-25" />
 
+
 - Fichiers attendus générés automatiquement
 - Fourniture Obligatoire / Conditionnelle
 - Fichiers fournis assignés aux fichiers attendus correspondant
@@ -398,9 +437,7 @@ clicks: 2
 
 
 <template v-slot:right>
-  <img v-if="$slidev.nav.clicks === 0" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
-  <img v-if="$slidev.nav.clicks === 1" v-motion :initial="{ y: 0, x: 0, scale: 1 }" :enter="{ y: -35, x: -240, scale: 2.1 }" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
-  <img v-if="$slidev.nav.clicks === 2" v-motion :initial="{ y: -35, x: -240, scale: 2.1 }" :enter="{ y: 0, x: 0, scale: 1 }" src="/app/fonctionnalite-controle-des-documents.png" class="ml-5 mt-35 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-controle-des-documents.png" :zoomed-x="-240" :zoomed-y="-35" :scale="2.1" class="ml-5 mt-35 rounded shadow" />
 </template>
 
 <Pagination />
@@ -414,11 +451,18 @@ Sur cette page, à également accès à :
 - le dictionnaire que j'expliquerai dans la slide suivante
 
 Après cette étape l'utilisateur soumet son DOE à validation, et le documentaliste ou le bureau de contrôle va étudier les pièces fournis pour contrôler leurs validité. Le DOE peut être refusé, validé, validé avec complément ou validé sans contrôle.
+
+Commentaires :
+- Ralentir le débit de paroles
+- Rappeler souvent les termes techniques
+- Faire plus de pause
+- Montrer précisement l'emplecement des fonctionnalités à l'écran
 -->
 
 ---
 layout: two-cols
 name: feat | Dictionnaire
+clicks: 2
 ---
 
 <Header />
@@ -435,7 +479,7 @@ name: feat | Dictionnaire
 - Liste complète des fichiers disponible en consultation libre
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-dictionnaire-ouvert.png" class="mt-38 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-dictionnaire-ouvert.png" :zoomed-x="-220" :zoomed-y="-25" :scale="2.2" class="mt-38 rounded shadow" />
 </template>
 
 <Pagination />
@@ -449,6 +493,7 @@ Des exemple conforme et non conforme sont également fournis afin de montrer les
 ---
 layout: two-cols
 name: feat | Suivi des DOE
+clicks: 2
 ---
 
 <Header />
@@ -469,7 +514,7 @@ name: feat | Suivi des DOE
 - Bouton d'accès au DOE
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-suivi-en-cours.png" class="mt-40 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-suivi-en-cours.png" :zoomed-x="-220" :zoomed-y="-5" :scale="2.2" class="mt-40 rounded shadow" />
 </template>
 
 <Pagination />
@@ -483,6 +528,7 @@ A l'aide de filtre, on peut accéder directement a un DOE qui nous interesse.
 ---
 layout: two-cols
 name: feat | DOE attendus
+clicks: 2
 ---
 
 <Header />
@@ -503,7 +549,7 @@ name: feat | DOE attendus
 - Accès à la création du DOE prérempli
 
 <template v-slot:right>
-  <img src="/app/fonctionnalite-doe-attendus.png" class="mt-25 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-doe-attendus.png" :zoomed-x="-220" :zoomed-y="-20" :scale="1.7" class="mt-25 rounded shadow" />
 </template>
 
 <Pagination />
@@ -550,6 +596,10 @@ Lorsque qu'orange est en cohabitation avec un autre opérateur, comme par exempl
 Afin d'éviter de surcharger le suivi des DOE qui sont en attente pendant 6 mois. La fourniture de ces fichiers ce font sur une autre page.
 
 Une fois ce fichier fournis, il est automatiquement injecté dans le DOE.
+
+Commentaires :
+- Slide par compréhensible
+- BENEFICE : Fluidifier la création du DOE, raccourcir les délais, génére moins de dysfonctionnement et de frustration pour les utilisateurs
 -->
 
 ---
@@ -580,6 +630,11 @@ La liste des fichiers attendus générer à la création d'un DOE n'est pas fixe
 Un problème que j'ai rencontrer lors de la création de cette fonctionnalité en version WEB qui n'existait pas en version Excel, c'est que les DOE en cours se retrouvait désynchronisé de la trame. Pour répondre à cette problématique j'ai utiliser un système de versionning et de publication de trame.
 
 Une fois la trame publié tous les DOE en cours sont réanalysés afin d'avoir tous les fichiers manquants affichés. Les DOE validés restent sur une ancienne version de la trame.
+
+Commentaire :
+- Challenge pas problème
+- BENEFICE A CHAQUE FOIS (même sur la slide)
+- Avantage souplesse
 -->
 
 ---
@@ -609,6 +664,10 @@ name: feat | Utilisateurs
 L'outil permet également de gérer les droit des utilisateurs par UPR et par role (RBAC).
 
 Le projet towerco a également imposé une différence entre profile Orange et Totem.
+
+Commentaire:
+prôfiles mal écri
+role accent
 -->
 
 ---
@@ -796,6 +855,7 @@ Je ne vais pas rentrer dans le détails de toutes les technologies utilisés. Ce
 layout: default
 name: Diagramme de BDD
 ---
+
 <Header />
 
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
@@ -804,6 +864,116 @@ name: Diagramme de BDD
 <div class="h-full pt-20 pb-5">
   <img src="/app/diagramme-bdd-partial.png" class="h-full rounded shadow d-block mx-auto" />
 </div>
+
+<Pagination />
+
+<!--
+Commentaires :
+
+Cette outil apporte une grande fiabilité que nous n'avions pas auparavant
+
+C'était très motivant pour moi
+
+Le slide de comprendre la complexité du travail
+-->
+
+---
+layout: cover
+name: Le projet towerco
+background: /background-towerco.jfif
+---
+
+# Le projet Towerco
+
+---
+layout: two-cols
+name: Towerco
+---
+
+<Header />
+
+<AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Description du projet</AbsoluteTitle>
+
+<div class="mt-25" />
+
+- Cession du patrimoine immobilier (sites et pylones) Orange à une filliale
+- Faire concurrence à SFR (Hivory) et Bouygues (Cellnex)
+
+<template v-slot:right>
+
+<div class="h-full flex flex-column items-center justify-center">
+  <img src="/orange-enseigne.jpg" class="h-60 rounded shadow d-block mx-auto" />
+</div>
+
+</template>
+
+<Pagination />
+
+<!--
+Comme j'ai expliqué en introduction, le projet de l'outil DOE s'est développé en parallèle d'un autre gros projet à Orange : le projet towerco.
+
+A l'instar de SFR et de Bouygues, Orange a choisi de séparer son activité déploiement de réseau pour séparer ses opex et ses capex. Cette opération
+
+Afin de mener à bien cette sission, la loi impose une session de la documentation. Néanmoins, pas toute la documentation ne dois être transférée. Afin d'opérer ce filtres et ce contrôle légal, 2 documentaliste ont été engagés par UPR.
+
+L'outil DOE version Excel convenant parfaitement à cette utilisation. Nous avons développer une API pour faciliter et accélerer ce processus de contrôle de l'entiereté de la documentation. Sans ca, il aurait fallu plusieurs années pour contrôler tous les documents
+
+Commentaires :
+Cession du parc immobilier (sur la slide)
+Donner souvent des exemples
+Je vous évite des détails
+
+PLUS DE SLIDE LA DESSUS
+
+Extension de DOE à d'autre cas d'usage
+Dans un premier temps d'une transformation structurelle de l'entreprise. Gain de temps e de qualité. Ca a permis de s'adapter dans un temps record.
+Dans un second temps le challenge l'adaptation
+L'entreprise pas ils ont voulus
+
+FOCALISER SUR LE BENEFICE
+En x temps au lieu
+Avec les risques d'erreurs
+Augmenter le retour sur investissement
+Eviter au personnes d'éviter des faire des heures de saisie
+C'était stratégique pour l'entreprise
+Le bénéfice
+C'est très p
+-->
+
+---
+layout: two-cols
+name: Phase 1 | Cession des documents
+---
+
+<Header />
+
+<AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Phase 1 : Cession des documents</AbsoluteTitle>
+
+<div class="mt-25" />
+
+- Obligation légale de fournir une documentation
+- 2 documentalistes par UPR
+- 2.5 To de données à trier, filtrer et transférer
+- Réutilisation de l'outil Excel avec un serveur d'API
+- Dépôt des documents sous S3
+
+<Pagination />
+
+---
+layout: two-cols
+name: Phase 2 | Adaptation de l'outil
+---
+
+<Header />
+
+<div class="mt-25" />
+
+<AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
+<AbsoluteTitle :level="3" top-class="top-20">Phase 2 : Adaptation de l'outil</AbsoluteTitle>
+
+- Adaptation de l'outil pour convenir aux nouveaux processus Orange
 
 <Pagination />
 
@@ -853,6 +1023,18 @@ Ce PFE m'a permis de porter un projet de A à Z et d'être l'interlocuteur privi
 J'ai appris à surmonter beaucoup d'obstacle technique ou humain.
 
 J'ai eu une expérience de la conduite de projet, j'ai passé beaucoup de temps réunions, des discussions qui sont relativement longues et fastidieuse et parfois sans résultats concrets.
+
+Commentaire :
+
+
+QUE DES PHRASES JE, J'ai acquis, j'ai su, j'ai améliorer
+L'entreprise Orange dont le service informatique est complexe
+
+Transformation stratégique.
+
+A l'issu de ce projet une personne va être embaucher pour maintenir et développer le projet.
+
+J'ai appris
 -->
 
 ---
