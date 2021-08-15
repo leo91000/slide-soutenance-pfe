@@ -193,11 +193,13 @@ name: Processus de déploiement des sites mobiles
 <AbsoluteTitle :level="1">Les enjeux de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Le processus de déploiement des site mobiles</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-30" />
 
-- Processus de déploiement des site mobiles :
-    - Négociation
-    - Construction
+- Marketing : cible à atteindre (4G, 5G, etc)
+- Validation en fonction des budgets
+- Etude du besoin (hauteur du pylone, installations, etc)
+- Négociation et signature du bail
+- Travaux de construction
 
 ::right::
 
@@ -215,7 +217,7 @@ name: Qu'est ce qu'un DOE ?
 <AbsoluteTitle :level="1">Les enjeux de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Qu'est ce qu'un DOE ?</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-40" />
 
 - DOE = <span class="font-bold">D</span>ossier d'<span class="font-bold">O</span>uvrage <span class="font-bold">E</span>xécuté
 - A l'issue des travaux réalisés sur sites, des documents sont nécessaires
@@ -223,7 +225,7 @@ name: Qu'est ce qu'un DOE ?
 
 ::right::
 
-<img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
+<img src="/documentation.png" class="h-38 mt-40 rounded shadow d-block mx-auto" />
 
 <Pagination />
 
