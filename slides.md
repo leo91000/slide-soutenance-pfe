@@ -47,21 +47,21 @@ name: Sommaire
 
 <div class="mt-18"></div>
 
-1. Orange
-2. Contexte de l'application
+1. L'entreprise Orange
+2. Les enjeux de l'application
     - Le processus de déploiement des sites
     - Les DOE
     - Historique
-3. Outil DOE Web
+3. La solution DOE Web
     - Pourquoi une version Web ?
     - Présentation de l'outil
     - Présentation technique
     - Méthodologie du projet
-3. Le projet towerco
+3. Le projet de transformation Towerco
     - Description du projet
     - Cession de la documentation
     - Adaptation de l'outil DOE
-4. Résultats et réflexions
+4. Résultats & Pistes de réflexion
 
 <template v-slot:right>
 
@@ -90,14 +90,16 @@ name: Présentation de Orange
 
 <Header />
 
-<AbsoluteTitle :level="1">Présentation de Orange</AbsoluteTitle>
+<AbsoluteTitle :level="1">Présentation de l'entreprise Orange</AbsoluteTitle>
 
-<div class="mt-40"></div>
+<div class="mt-30"></div>
 
 - Opérateur de Télécommnunications
+- 42,2 milliards € de chiffres d'affaires
+- 147 000 employés
 - Solutions B2B & B2C
 - Leader historique sur le marché
-- 1<sup>er</sup> opérateur mobile pour la 10<sup>ème</sup> année consécutive selon l'Arcep
+- 1<sup>er</sup> opérateur mobile pour la 10<sup>ème</sup> année consécutive selon l'ARCEP
 
 <template v-slot:right>
 
@@ -125,6 +127,8 @@ Décrire ce que s'est l'ARCEP
 Commentaires :
 Non pas tous le monde connait Orange
 
+Nombre d'employé / CA
+
 Vous connaissez !probablement (par X, par Y)
 Pourquoi Orange est si connu ?
 -->
@@ -136,7 +140,7 @@ name: Présentation de mon département
 
 <Header />
 
-<AbsoluteTitle :level="1">Présentation de mon département</AbsoluteTitle>
+<AbsoluteTitle :level="1">Zoom sur mon département</AbsoluteTitle>
 
 <div class="h-full flex flex-column items-center justify-center">
   <img src="/upr-ne.png" class="h-80 d-block mx-auto" />
@@ -182,24 +186,28 @@ Plus spécifiquement, j'étais dans l'équipe PRB (Performance Relation bailleur
 
 Commentaires :
 L'entreprise Orange et pas Orange
+Zoom sur mon département
+C'est un groupe international
 
 A des entités dans toute la France,
 -->
 
 ---
 layout: cover
-name: Contexte de l'application
+name: Les enjeux de l'application
 background: /background-contexte.jfif
 ---
 
-# Contexte de l'application
+# Les enjeux de l'application
 
 ---
 layout: two-cols
 name: Processus de déploiement des sites mobiles
 ---
 
-<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
+<Header />
+
+<AbsoluteTitle :level="1">Les enjeux de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Le processus de déploiement des site mobiles</AbsoluteTitle>
 
 <div class="mt-25" />
@@ -212,6 +220,8 @@ name: Processus de déploiement des sites mobiles
   <img src="/antenne-orange.jpg" class="h-60 mt-25 rounded shadow d-block mx-auto" />
 </template>
 
+<Pagination />
+
 ---
 layout: two-cols
 name: Qu'est ce qu'un DOE ?
@@ -219,7 +229,7 @@ name: Qu'est ce qu'un DOE ?
 
 <Header />
 
-<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
+<AbsoluteTitle :level="1">Les enjeux de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Qu'est ce qu'un DOE ?</AbsoluteTitle>
 
 <div class="mt-25" />
@@ -258,7 +268,7 @@ name: Historique
 
 <Header />
 
-<AbsoluteTitle :level="1">Contexte de l'application</AbsoluteTitle>
+<AbsoluteTitle :level="1">Les enjeux de l'application</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Outil DOE Version Excel</AbsoluteTitle>
 
 <div class="mt-40" />
@@ -289,7 +299,7 @@ name: Fonctionnalités de l'application
 background: /background-fonctionnalites.jfif
 ---
 
-# Outil DOE Web
+# La solution DOE Web
 
 <!--
 Je vais à présent vous expliquer le fonctionnement de l'application.
@@ -302,7 +312,7 @@ name: Pourquoi version WEB ?
 
 <Header />
 
-<AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
+<AbsoluteTitle :level="1">La solution DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Pourquoi une version WEB ?</AbsoluteTitle>
 
 <ul class="mt-20">
@@ -362,6 +372,7 @@ Commentaires :
 Décrire RGPD,
 L'ancienne version ne respectait pas la RGPD
 Si l'entreprise
+La solution excel n'était plus adapté aux besoin de l'entreprise
 -->
 
 ---
@@ -375,7 +386,14 @@ clicks: 2
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Création du DOE</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-23" />
+
+- Améliorations vs Excel
+    - Formulaire plus intuitif
+    - Auto complétion des champs du formulaire
+    - Beaucoup plus performant
+
+<hr class="my-5 mr-4">
 
 - Renseignement des informations sur l'opération
     - Code opération
@@ -383,7 +401,7 @@ clicks: 2
     - Bandes de fréquence
     - Recetteur
     - ...
-- Génération des cases à cocher
+- Plus d'options : Génération des cases à cocher
     - Détails plus spécifiques
     - Généré en fonction du type d'opération
 
@@ -420,20 +438,21 @@ clicks: 2
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Dépôt/Contrôle des documents</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-23" />
 
+- Améliorations vs Excel
+    - Une saisie facilitée
+    - Les fichiers sont analysé progressivement
+    - Plus performant
+    - Plus fiable
+
+<hr class="my-5 mr-4">
 
 - Fichiers attendus générés automatiquement
 - Fourniture Obligatoire / Conditionnelle
 - Fichiers fournis assignés aux fichiers attendus correspondant
 - Fichier OK ou NOK ou Fourniture ultérieur
 - Outil de renommage automatique à une règle donnée
-- Visionneuse de documents
-- Contrôle
-    - Refuser
-    - Valider
-    - Valider avec complément
-    - Valider sans contrôle
 
 
 <template v-slot:right>
@@ -470,7 +489,13 @@ clicks: 2
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Dictionnaire</AbsoluteTitle>
 
-<div class="mt-40" />
+<div class="mt-25" />
+
+- Améliorations vs Excel
+    - Une information plus accessible
+    - Des exemples pour guider l'utilisateur
+
+<hr class="my-5 mr-4">
 
 - Informations sur un fichier attendu
 - Exemple à faire <mdi-check class="text-green-400 inline" />
@@ -502,6 +527,12 @@ clicks: 2
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Suivi des DOE</AbsoluteTitle>
 
 <div class="mt-25" />
+
+- Améliorations vs Excel
+    - Un monitoring des tâches
+    - Amélioration de la fiabilité : suppression de la boîte mail
+
+<hr class="my-5 mr-4">
 
 - Liste de tous les DOE
 - Filtres
@@ -538,7 +569,10 @@ clicks: 2
 
 <div class="mt-25" />
 
-- Liste de DOE non fournis (import SI)
+- Une nouvelle fonctionnalité qui permet de voir et de sélectionner les DOE en attente de fourniture
+
+<hr class="my-5 mr-4">
+
 - Filtres
     - Aménageurs
     - Type d'opé
@@ -549,7 +583,7 @@ clicks: 2
 - Accès à la création du DOE prérempli
 
 <template v-slot:right>
-  <ZoomableImage src="/app/fonctionnalite-doe-attendus.png" :zoomed-x="-220" :zoomed-y="-20" :scale="1.7" class="mt-25 rounded shadow" />
+  <ZoomableImage src="/app/fonctionnalite-doe-attendus.png" :zoomed-x="-230" :zoomed-y="-20" :scale="1.7" class="ml-5 mt-25 rounded shadow" />
 </template>
 
 <Pagination />
@@ -570,7 +604,11 @@ name: feat | EDLE/EDLS manquants
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : EDLE/EDLS manquants</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-23" />
+
+- Une nouvelle fonctionnalité : Simplifier l'utilisation en séparant les fournitures ultérieures
+
+<hr class="my-5 mr-4">
 
 - Fichiers fournis 6 mois après le DOE
 - Fourniture en dehors du DOE
@@ -612,7 +650,13 @@ name: feat | Publication trame
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Modification et publication de la trame</AbsoluteTitle>
 
-<div class="mt-40" />
+<div class="mt-30" />
+
+- Améliorations vs Excel
+    - Publication instantanée
+    - Versionning pour vérifier la validité dans le temps
+
+<hr class="my-5 mr-4">
 
 - Liste des règles permettant de générer les fichiers attendus en fonction de la nature de l'opération
 - Modification / Publication / Versionning de la trame
@@ -647,9 +691,15 @@ name: feat | Utilisateurs
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Gestion des utilisateurs et des droits</AbsoluteTitle>
 
-<div class="mt-40" />
+<div class="mt-30" />
 
-- Gestion des prôfiles utilisateurs
+- Une nouvelle fonctionnalité : création de profils et gestion des droits
+- Amélioration vs Excel :
+  - Sécurisation des droits
+
+<hr class="my-5 mr-4">
+
+- Gestion des profils utilisateurs
 - Role (Droits d'accès)
 - UPR (Régions accessibles)
 - Profile Orange / Totem
@@ -680,7 +730,14 @@ name: feat | Autres
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Fonctionnalités de l'application : Autres</AbsoluteTitle>
 
-<ul class="mt-30">
+<div class="mt-24" />
+
+- De nombreuses fonctionnalités ajoutées
+- Application innovante
+
+<hr class="my-5 mr-4">
+
+<ul>
   <li>
     Interconnexion Totem
   </li>
@@ -732,8 +789,9 @@ name: Méthodogie
     </ul>
   </li>
   <li>
-    Réunions régulières avec les acteurs concernés
+    Un développement au plus près des utilisateurs
     <ul>
+      <li>Réunions régulières avec les acteurs concernés</li>
       <li>Idées de nouvelles fonctionnalités</li>
       <li>Découverte de bugs</li>
     </ul>
@@ -768,6 +826,8 @@ Pour la réalisation de cette outil, nous avons fonctionné en méthode agile av
 Nous avons également organiser beaucoup de réunion avec les utilisateurs futurs de l'application. Ces réunions ont permis de comprendre des fonctionnalités manquantes et de découvrir d'éventuels bug.
 
 Afin d'assurer un déploiement fréquent, nous avons utilisé l'intégration et le déploiement continue qui permet de déployer rapidement et automatiquement les nouvelles versions de l'application.
+
+Commentaire: Open source
 -->
 
 ---
@@ -852,7 +912,7 @@ Je ne vais pas rentrer dans le détails de toutes les technologies utilisés. Ce
 -->
 
 ---
-layout: default
+layout: two-cols
 name: Diagramme de BDD
 ---
 
@@ -861,9 +921,17 @@ name: Diagramme de BDD
 <AbsoluteTitle :level="1">Outil DOE Web</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Diagramme de base de données</AbsoluteTitle>
 
-<div class="h-full pt-20 pb-5">
-  <img src="/app/diagramme-bdd-partial.png" class="h-full rounded shadow d-block mx-auto" />
-</div>
+<div class="mt-40" />
+
+- Un outil très fiable se basant sur une base de donnée relationnelle
+- Capacité à traiter des milliers de transactions en simultané
+
+
+<template v-slot:right>
+  <div class="h-full pt-20 pb-5 ml-5">
+    <img src="/app/diagramme-bdd-partial.png" class="h-full rounded shadow d-block mx-auto" />
+  </div>
+</template>
 
 <Pagination />
 
@@ -884,6 +952,7 @@ background: /background-towerco.jfif
 ---
 
 # Le projet Towerco
+### Un nouveau challenge pour l'outil DOE
 
 ---
 layout: two-cols
@@ -895,10 +964,11 @@ name: Towerco
 <AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Description du projet</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-35" />
 
-- Cession du patrimoine immobilier (sites et pylones) Orange à une filliale
-- Faire concurrence à SFR (Hivory) et Bouygues (Cellnex)
+- Recentrer Orange sur son coeur de métier
+- Céder du patrimoine immobilier (sites et pylones) Orange à une filliale
+- S'adapter à la concurrence SFR (Hivory) et Bouygues (Cellnex)
 
 <template v-slot:right>
 
@@ -951,12 +1021,12 @@ name: Phase 1 | Cession des documents
 <AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Phase 1 : Cession des documents</AbsoluteTitle>
 
-<div class="mt-25" />
+<div class="mt-28" />
 
+- Transfert sécurisé de la documentation : L'Outil DOE est un outil idéal pour cet objectif
 - Obligation légale de fournir une documentation
 - 2 documentalistes par UPR
 - 2.5 To de données à trier, filtrer et transférer
-- Réutilisation de l'outil Excel avec un serveur d'API
 - Dépôt des documents sous S3
 
 <Pagination />
@@ -968,12 +1038,35 @@ name: Phase 2 | Adaptation de l'outil
 
 <Header />
 
-<div class="mt-25" />
-
 <AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Phase 2 : Adaptation de l'outil</AbsoluteTitle>
 
-- Adaptation de l'outil pour convenir aux nouveaux processus Orange
+<div class="mt-30" />
+
+- Adaptation de l'outil pour anticiper les nouveaux processus d'Orange
+- Ajout des profil Totem
+- Trâme différente
+
+<Pagination />
+
+---
+layout: two-cols
+name: Business Case
+---
+
+<Header />
+
+<AbsoluteTitle :level="1">Business Case</AbsoluteTitle>
+
+<div class="mt-30" />
+
+- ETP
+  - Cout du temps passé
+  - Cout de fiabilité des données (minimiser les risques d'erreurs)
+  - Fourniture immédiate des documents
+  - Pas d'amende
+- Réutilisation de l'application (80 %) (evitement de cout)
+  - Nombre de développeur
 
 <Pagination />
 
@@ -984,23 +1077,33 @@ name: Résultats / Reflexions
 
 <Header />
 
-<AbsoluteTitle :level="1">Résultats et réflexions</AbsoluteTitle>
+<AbsoluteTitle :level="1">Résultats & Pistes de réflexion</AbsoluteTitle>
 
-<ul class="mt-20">
+<ul class="mt-18">
   <li>
     Apprentissages
     <ul>
       <li>Complexité du SI d'Orange</li>
       <li>Gestion de projet</li>
       <li>Beaucoup de compétences techniques</li>
+      <li>Autonomie professionel</li>
     </ul>
   </li>
   <li>
     Résultats
     <ul>
+      <li>Projet stratégique au niveau national <mdi-check class="inline text-green-400 animate-pulse" /></li>
       <li>Application en production <mdi-check class="inline text-green-400 animate-pulse" /></li>
       <li>Interfaces intuitives <mdi-check class="inline text-green-400 animate-pulse" /></li>
       <li>Application performante <mdi-check class="inline text-green-400 animate-pulse" /></li>
+    </ul>
+  </li>
+  <li>
+    Perspectives
+    <ul>
+      <li>L'application continue d'être maintenue</li>
+      <li>Embauche d'une régie pour assurer la pérénisation du projet</li>
+      <li>Application mobile envisagée</li>
     </ul>
   </li>
 </ul>
