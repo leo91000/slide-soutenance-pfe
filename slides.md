@@ -154,7 +154,7 @@ name: Présentation de mon département
   - <u>**DEP (Déploiement Réseau Mobile)**</u>
     - Conception et Négoication Sites Mobiles
     - Pilotage Production Mobile Nord Est
-    - class="font-bold underline">Performances Relations Bailleurs
+    - <u>**Performances Relations Bailleurs**</u>
     - ...
   - ...
 
@@ -970,27 +970,6 @@ name: Phase 2 | Adaptation de l'outil
 - Adaptation de l'outil pour anticiper les nouveaux processus d'Orange
 - Ajout des profil Totem
 - Trâme différente
-
-<Pagination />
-
----
-layout: two-cols
-name: Business Case
----
-
-<Header />
-
-<AbsoluteTitle :level="1">Business Case</AbsoluteTitle>
-
-<div class="mt-30" />
-
-- ETP
-  - Cout du temps passé
-  - Cout de fiabilité des données (minimiser les risques d'erreurs)
-  - Fourniture immédiate des documents
-  - Pas d'amende
-- Réutilisation de l'application (80 %) (evitement de cout)
-  - Nombre de développeur
 
 <Pagination />
 
