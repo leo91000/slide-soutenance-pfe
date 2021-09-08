@@ -945,13 +945,20 @@ name: Phase 1 | Cession des documents
 <AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Phase 1 : Cession des documents</AbsoluteTitle>
 
-<div class="mt-28" />
+<div class="mt-30" />
 
 - Transfert sécurisé de la documentation : L'Outil DOE est un outil idéal pour cet objectif
 - Obligation légale de fournir une documentation
 - 2 documentalistes par UPR
 - 2.5 To de données à trier, filtrer et transférer
 - Dépôt des documents sous S3
+- **L'outil a économisé plusieurs dizaine de milliers d'€ à Orange**
+
+::right::
+
+<div class="h-full flex flex-column items-center justify-center">
+  <img src="/antenne-totem.jpg" class="h-60 rounded shadow d-block mx-auto" />
+</div>
 
 <Pagination />
 
@@ -965,11 +972,17 @@ name: Phase 2 | Adaptation de l'outil
 <AbsoluteTitle :level="1">Le projet Towerco</AbsoluteTitle>
 <AbsoluteTitle :level="3" top-class="top-20">Phase 2 : Adaptation de l'outil</AbsoluteTitle>
 
-<div class="mt-30" />
+<div class="mt-40" />
 
 - Adaptation de l'outil pour anticiper les nouveaux processus d'Orange
 - Ajout des profil Totem
 - Trâme différente
+
+::right::
+
+<div class="h-full flex flex-column items-center justify-center">
+  <img src="/totem-orange.webp" class="h-60 rounded shadow d-block mx-auto" />
+</div>
 
 <Pagination />
 
@@ -988,7 +1001,7 @@ name: Résultats / Reflexions
   - Complexité du SI d'Orange
   - Gestion de projet
   - Beaucoup de compétences techniques
-  - Autonomie professionel
+  - Autonomie professionnel
 - Résultats
   - Projet stratégique au niveau national <mdi-check class="inline text-green-400 animate-pulse" />
   - Application en production <mdi-check class="inline text-green-400 animate-pulse" />
@@ -996,7 +1009,7 @@ name: Résultats / Reflexions
   - Application performante <mdi-check class="inline text-green-400 animate-pulse" />
 - Perspectives
   - L'application continue d'être maintenue
-  - Embauche d'une régie pour assurer la pérénisation du projet
+  - Embauche d'une régie pour assurer la pérénnisation du projet
   - Application mobile envisagée
 
 ::right::
